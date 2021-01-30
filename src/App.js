@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./app.css";
+import Title from "./components/Title";
 import ResultComponent from "./components/ResultComponent";
 import KeyPadComponent from "./components/KeyPadComponent";
 
@@ -8,7 +9,8 @@ class App extends Component {
     super();
 
     this.state = {
-      result: ""
+      result: "",
+      heading: "Simple Calculator"
     };
   }
 
@@ -61,10 +63,15 @@ class App extends Component {
   render() {
     return (
       <div>
+        <br/>
+        <Title
+          heading={this.state.heading}
+        />
         <div className="calculator-body">
-          <h1>Simple Calculator</h1>
+        <br/>
           <ResultComponent result={this.state.result} />
           <KeyPadComponent onClick={this.onClick} />
+          <br/>
         </div>
       </div>
     );
