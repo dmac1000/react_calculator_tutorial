@@ -10,7 +10,7 @@
 .calculator-body {
   max-width: 450px;
   margin: auto;
-  border: 2px solid #080808;
+  border: 2px solid rgb(83, 79, 79);
   border-radius: 20px;
   background-image: linear-gradient(to right, rgb(55, 75, 248) , rgb(166, 194, 247));
   box-shadow: 5px 5px 10px #3a3a3b;
@@ -20,7 +20,6 @@
   height: 80px;
   background-image: linear-gradient(to right, rgb(55, 75, 248) , rgb(166, 194, 247));
   width: 100%;
- 
 }
 
 .result p {
